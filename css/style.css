@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+/*----header----*/
+
+.bg-header {
+  background-color: #2B2929;
+  margin-bottom: 10px;
+}
+
+.color-menu {
+  color: #FEFEFE;
+}
+
+.color-menu:hover {
+  background-color: #ED3237;
+}
+
+
+/*----inicio index main----*/
+
+.h1-index {
+  padding: 20px;
+  text-align: center;
+  background-color: #2B2929;
+  color: #FEFEFE;
+}
+
+.foto-index {
+background-color: whitesmoke ;
+}
+
+/*----fin de index----*/
+
+/*----inicio de about ----*/
+.about-cover {
+  position: relative;
+  text-align: center;
+}
+
+.about-cover img {
+  width: 100%;
+}
+
+.about-cover h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: #BDBFC1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.about-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-item {
+  flex: 0 0 calc(33.33% - 20px);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.about-item img {
+  width: 100%;
+  display: block;
+}
+
+.about-item .about-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FEFEFE;
+  padding: 10px;
+}
+
+/*----fin de about ----*/
+
+/*----inicio demedia ----*/
+.h1-media {
+  padding: 20px;
+  text-align: center;
+  background-color: #2B2929;
+  color: #FEFEFE;
+}
+
+.videos {
+  padding: 20px 0;
+}
+
+.videos h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video {
+  margin-bottom: 40px;
+}
+
+.video p {
+  margin-top: 10px;
+}
+
+/*--fin de about--*/
+
+/*--inicio proyects--*/
+.h1-projects {
+  padding: 20px;
+  text-align: center;
+  background-color: #2B2929;
+  color: #FEFEFE;
+}
+
+.gallery {
+  padding: 20px 0;
+}
+
+.gallery-item {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #FDFBEC;
+}
+
+.text h3 {
+  margin-bottom: 10px;
+}
+
+/*--fin proyects--*/
+
+/*--inicio Contact--*/
+.h1-contact {
+  padding: 20px;
+  text-align: center;
+  background-color: #2B2929;
+  color: #FEFEFE;
+}
+.form-container {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 0px 20px;
+}
+
+input,
+textarea {
+  width: 50%;
+  padding: 10px;
+  margin: 0px 20px;
+  border: 1px solid #FEFEFE;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #2B2929;
+  color: #FEFEFE;
+  border: none;
+  margin: 0px 20px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ED3237;
+}
+
+/*--Fin de Contact--*/
+
+/*footer*/
+
+.bg-footer {
+  margin-top: 10px;
+  background-color: #2B2929;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.type-white {
+
+  color: #FEFEFE;
+}
+
+.redes a i {
+  font-size: 25px;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.redes a i:hover {
+  transform: scale(1.5);
+  transition: all 1s ease;
+  color: #ED3237;
+}
+
+/*--fin de footer*/
+
+/*--mediaquerys--*/
+@media only screen and (max-width: 768px) {
+
+  .index {
+    flex-direction: column;
+  }
+
+  .text-container {
+    align-items: flex-start;
+  }
+
+  .index img {
+    width: 100%;
+  }
+
+  .p-index {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .videos {
+    padding: 20px 0;
+  }
+
+  .video-container {
+    align-items: flex-start;
+  }
+
+  .video {
+    margin-bottom: 20px;
+  }
+
+  .video iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery {
+    padding: 20px 0;
+  }
+  
+@media only screen and (max-width: 576px) {
+  .form-container {
+    max-width: 90%;
+  }
+}
+}
