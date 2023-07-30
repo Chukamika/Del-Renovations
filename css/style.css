@@ -31,40 +31,70 @@ body {
   background-color: #ED3237;
 }
 
+.navbar-nav .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 
 /*----inicio index main----*/
 
 .h1-index {
   padding: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #2B2929;
+  color: #FEFEFE;
+}
+
+.h2-index {
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
   background-color: #2B2929;
   color: #FEFEFE;
 }
 
 .foto-index {
-background-color: whitesmoke ;
+  background-color: whitesmoke;
+}
+
+.p-index {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.logo-img {
+  max-width: 150px;
+  transition: transform 0.5s;
+}
+.logo-img:hover {
+  transform: scale(1.10);
 }
 
 /*----fin de index----*/
 
 /*----inicio de about ----*/
-.about-cover {
-  position: relative;
+
+.h1-about {
+  padding: 20px;
   text-align: center;
+  background-color: #2B2929;
+  color: #FEFEFE;
+}
+
+.about-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .about-cover img {
-  width: 100%;
-}
-
-.about-cover h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 4rem;
-  color: #BDBFC1;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  height: auto;
 }
 
 .about-content {
@@ -102,40 +132,7 @@ background-color: whitesmoke ;
 
 /*----fin de about ----*/
 
-/*----inicio demedia ----*/
-.h1-media {
-  padding: 20px;
-  text-align: center;
-  background-color: #2B2929;
-  color: #FEFEFE;
-}
-
-.videos {
-  padding: 20px 0;
-}
-
-.videos h2 {
-  text-align: center;
-  margin: 20px;
-}
-
-.video-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.video {
-  margin-bottom: 40px;
-}
-
-.video p {
-  margin-top: 10px;
-}
-
-/*--fin de about--*/
-
-/*--inicio proyects--*/
+/*--inicio portfolio--*/
 .h1-projects {
   padding: 20px;
   text-align: center;
@@ -187,7 +184,7 @@ background-color: whitesmoke ;
   margin-bottom: 10px;
 }
 
-/*--fin proyects--*/
+/*--fin portfolio--*/
 
 /*--inicio Contact--*/
 .h1-contact {
@@ -196,6 +193,19 @@ background-color: whitesmoke ;
   background-color: #2B2929;
   color: #FEFEFE;
 }
+
+.h2-contact {
+  padding: 20px;
+  text-align: center;
+  color: #2B2929;
+}
+
+.p-contact {
+  padding: 0px 20px;
+  text-align: center;
+}
+
+
 .form-container {
   max-width: 60%;
   margin: 0 auto;
@@ -244,22 +254,30 @@ button[type="submit"]:hover {
   background-color: #2B2929;
   padding: 10px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .type-white {
-
   color: #FEFEFE;
+  text-align: justify;
 }
 
-.redes a i {
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes a {
+  display: inline-block;
+  color: #FEFEFE;
   font-size: 25px;
-  text-align: center;
-  padding: 5px 10px;
+  margin: 0 5px;
 }
 
-.redes a i:hover {
+.redes a:hover {
   transform: scale(1.5);
   transition: all 1s ease;
   color: #ED3237;
@@ -287,34 +305,35 @@ button[type="submit"]:hover {
     margin-top: 20px;
   }
 
+  .col-md-3 {
+    flex-basis: 50%;
+  }
+
   .hero h1 {
     font-size: 24px;
   }
 
-  .videos {
-    padding: 20px 0;
-  }
-
-  .video-container {
-    align-items: flex-start;
-  }
-
-  .video {
-    margin-bottom: 20px;
-  }
-
-  .video iframe {
+  .about-cover {
     width: 100%;
-    height: auto;
   }
 
   .gallery {
     padding: 20px 0;
   }
-  
-@media only screen and (max-width: 576px) {
-  .form-container {
-    max-width: 90%;
+
+  .redes {
+    flex-direction: row;
+    justify-content: center;
   }
-}
+
+  .redes a {
+    margin: 0 10px;
+  }
+
+
+  @media only screen and (max-width: 576px) {
+    .form-container {
+      max-width: 90%;
+    }
+  }
 }
