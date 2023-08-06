@@ -69,6 +69,7 @@ body {
   max-width: 150px;
   transition: transform 0.5s;
 }
+
 .logo-img:hover {
   transform: scale(1.10);
 }
@@ -103,33 +104,22 @@ body {
   padding: 40px;
 }
 
-.about-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.card {
+  background-color: #F9F9F9;
+  padding: 20px;
+  border: 1px solid #EAEAEA;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
-.about-item {
-  flex: 0 0 calc(33.33% - 20px);
-  margin-bottom: 40px;
-  position: relative;
+.card h2 {
+  color: #2B2929;
+  margin-bottom: 10px;
 }
 
-.about-item img {
-  width: 100%;
-  display: block;
+.card p {
+  color: #2B2929;
 }
-
-.about-item .about-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #FEFEFE;
-  padding: 10px;
-}
-
 /*----fin de about ----*/
 
 /*--inicio portfolio--*/
@@ -201,10 +191,24 @@ body {
 }
 
 .p-contact {
-  padding: 0px 20px;
-  text-align: center;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
+.form-control::placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.which-contact {
+  margin-left: 20px;
+}
+
+.hear-about {
+  margin-left: 20px;
+}
 
 .form-container {
   max-width: 60%;
@@ -236,6 +240,7 @@ button[type="submit"] {
   color: #FEFEFE;
   border: none;
   margin: 0px 20px;
+  margin-bottom: 20px;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
@@ -316,6 +321,10 @@ button[type="submit"]:hover {
   .about-cover {
     width: 100%;
   }
+
+  .about-content {
+    grid-template-columns: 1fr;
+}
 
   .gallery {
     padding: 20px 0;
